@@ -3,6 +3,9 @@
   become: true
   connection : ssh
   tasks : 
+  -name: ping
+   command : ansible -m ping 
+   
   - name: updating apt
     command : sudo apt-get update
 
