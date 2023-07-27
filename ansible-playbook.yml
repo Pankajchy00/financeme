@@ -4,7 +4,7 @@
   connection : ssh
   tasks : 
   -name: ping
-   command : ansible -m ping 
+   command : ansible -m ping -i inventory.txt
    
   - name: updating apt
     command : sudo apt-get update
