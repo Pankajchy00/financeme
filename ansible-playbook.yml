@@ -3,10 +3,10 @@
   become: true
   connection : ssh
   tasks : 
-  -name: ping
-   command: ansible -m ping inventory.txt
+  -name : ping
+   command : ansible -m ping inventory.txt
    
-  - name: updating apt
+  - name : updating apt
     command : sudo apt-get update
 
   - name : Install Docker
